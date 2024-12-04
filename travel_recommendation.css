@@ -6,34 +6,6 @@
     box-sizing: border-box;
 }
 
-nav {
-    background-color: #000000;
-    padding: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    opacity: 0.7;
-    position: relative;
-    z-index: 9;
-}
-
-nav ul {
-    list-style-type: none;
-    /* padding: 0; */
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 10px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #FFFFFF;
-    font-weight: bold;
-}
-
-/* Basic CSS for the form elements */
 body {
     font-family: Arial, sans-serif;
     background-image: url('images/travel.jpg');
@@ -46,7 +18,7 @@ body {
     content: '';
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to right, #043a51e3, hwb(0deg 97.95% 2.05% / 0%));
+    background: linear-gradient(to right, #037070, hwb(0deg 97.95% 2.05% / 0%));
     position: absolute;
     left: 0;
     top: 0;
@@ -64,6 +36,83 @@ body {
     position: relative;
     z-index: 9;
 }
+
+h1 {
+    color: #FFF;
+}
+
+p {
+    color: #FFF;
+}
+
+
+button {
+    padding: 7px 15px;
+    background-color: #008080;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #037070;
+}
+
+nav {
+    background-color: #000000;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 0.7;
+    position: relative;
+    z-index: 9;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li i {
+    position: absolute;
+    right: 180px;
+    top: 35%;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+#destinationInput {
+    width: 450px;
+    padding: 12px;
+    padding-right: 100px;
+    border: none;
+    border-radius: 20px;
+
+}
+
+#btnSearch {
+    position: absolute;
+    top: 20%;
+    right: 100px;
+}
+
+#btnResetSearch {
+    position: absolute;
+    top: 20%;
+    right: 30px;
+}
+
+/* Basic CSS for the form elements */
+
 
 .fixed-sidebar-left {
     position: fixed;
@@ -116,65 +165,23 @@ body {
     align-items: center;
 }
 
-h1 {
-    margin-bottom: 20px;
-    color: #FFF;
-}
 
-p {
-    color: #FFF;
-}
-
-div {
-    margin-bottom: 10px;
-}
-
-label {
-    display: inline-block;
-    width: 100px;
-}
-
-input[type="text"],
-input[type="number"],
-select {
-    width: 200px;
-    padding: 5px;
-}
-
-button {
-    padding: 7px 15px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #45a049;
-}
 
 /* Basic CSS for the report section */
-h2 {
-    margin-top: 30px;
+.left-content {
+    padding: 40px;
 }
 
-.right-section h1 {
-    font-size: 60px;
+.left-content h1 {
+    font-size: 80px;
     text-transform: uppercase;
 }
-
-/* #report,
-#result {
-    padding: 10px;
-    max-width: 400px;
-    word-wrap: break-word;
-} */
 
 #result {
     height: 400px;
     width: 500px;
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: space-around;
     flex-direction: column;
     margin-right: 0;
@@ -185,6 +192,7 @@ h2 {
     border-radius: 10px;
     background-color: #fff;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
 }
 
 #result img {
