@@ -59,57 +59,78 @@ button:hover {
     background-color: #037070;
 }
 
-nav {
-    background-color: #000000;
-    padding: 5px;
+.navbar {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000000;
+    border-bottom: 1px solid #000000;
     opacity: 0.7;
     position: relative;
     z-index: 9;
-}
+  }
 
-nav ul {
-    list-style-type: none;
-}
+  .navbar-center {
+    display: flex;
+    gap: 15px;
+  }
 
-nav ul li {
-    display: inline;
-}
-
-nav ul li i {
-    position: absolute;
-    right: 180px;
-    top: 35%;
-}
-
-nav a {
+  .navbar-center a {
     text-decoration: none;
     color: #FFFFFF;
-    font-weight: bold;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+
+  .navbar-right .search-container {
+    position: relative;
+    width: 450px;
+  }
+  
+  .navbar-right .search-container input {
+    width: 100%;
+    height: 40px;
+    padding: 5px 50px 5px 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    position: relative;
+  }
+  
+  .navbar-right .search-container i {
+    position: absolute;
+    right: 170px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #037070;
+    font-size: 1rem;
+  }
+  
+  .navbar-right .search-container #btnSearch {
+    position: absolute;
+    top: 13%;
+    right: 85px;
 }
 
-#destinationInput {
+.navbar-right .search-container #btnResetSearch {
+    position: absolute;
+    top: 13%;
+    right: 15px;
+}
+
+
+/* #destinationInput {
     width: 450px;
     padding: 12px;
     padding-right: 100px;
     border: none;
     border-radius: 20px;
 
-}
+} */
 
-#btnSearch {
-    position: absolute;
-    top: 20%;
-    right: 100px;
-}
-
-#btnResetSearch {
-    position: absolute;
-    top: 20%;
-    right: 30px;
-}
+/*  */
 
 /* Basic CSS for the form elements */
 
@@ -159,6 +180,18 @@ nav a {
 }
 
 .right-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.about-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact-section {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
