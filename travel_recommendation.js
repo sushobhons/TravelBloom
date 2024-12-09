@@ -41,24 +41,22 @@ function searchDestination() {
                     });
                 }
 
-                const countries = data.countries;
-
-                countries.forEach(country => {
-                    if (country.name.toLowerCase().includes(input)) {
+                if (input.includes('country') || input.includes('countries')) {
+                    const countries = data.countries;
+                    countries.forEach(country => {
                         country.cities.forEach(city => {
                             resultDiv.innerHTML += `
-                        <div class="result-item">
-                        <div class="image-section"> 
-                        <img src="${city.imageUrl}" alt="${city.name}">
-                        </div><div class="text-section">
-                        <h2>${city.name}</h2>
-                        <p>${city.description}</p>
-                        </div>
-                        </div>`;
+                            <div class="result-item">
+                            <div class="image-section"> 
+                            <img src="${city.imageUrl}" alt="${city.name}">
+                            </div><div class="text-section">
+                            <h2>${city.name}</h2>
+                            <p>${city.description}</p>
+                            </div>
+                            </div>`;
                         });
-                    }
-
-                });
+                    });
+                }
             }
 
         })
